@@ -1,0 +1,21 @@
+# Dependências do Node.js
+node_modules/
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Build
+dist/
+build/
+
+# Ambiente
+.env
+
+# Diretórios do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Diretórios de IDEs
+.vscode/
+.idea/
