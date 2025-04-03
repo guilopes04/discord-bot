@@ -106,18 +106,18 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
         // 20% chance
         console.log('Possibility 2 happened')
         // Perform actions for Possibility 2
+        await randomMoveUser(client, newState)
       } else if (randomNum < 60) {
         // 30% chance
         console.log('Possibility 3 happened')
         // Perform actions for Possibility 3
+        return await newState.member.voice.disconnect()
       } else {
         // 40% chance
         console.log('Possibility 4 happened')
         // Perform actions for Possibility 4
         return await newState.member.voice.disconnect()
       }
-
-      //await randomMoveUser(client, newState)
     }
   }
 })
